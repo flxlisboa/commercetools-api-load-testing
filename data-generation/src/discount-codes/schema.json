@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "randomizedDiscountCodes": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 1
+        },
+        "cartPredicate": {
+          "type": "string"
+        },
+        "maxApplicationsPerCustomer": {
+          "type": "number",
+          "minimum": 1
+        }
+      },
+      "required": ["amount"],
+      "additionalProperties": false
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "additionalProperties": false
+  },
+  "required": ["randomizedDiscountCodes"]
+}

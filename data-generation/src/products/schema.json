@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "amount": {
+      "type": "number",
+      "minimum": 1
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "variants": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 1
+        },
+        "max": {
+          "type": "number",
+          "minimum": 1
+        },
+        "prices": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "randomizedPrices": {
+              "additionalProperties": false,
+              "required": [],
+              "type": "object",
+              "properties": {
+                "min": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "max": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "mustHaveCountries": {
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "currencies": {
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "minCentAmount": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "maxCentAmount": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "minMaxValidator": true,
+              "minCentMaxCentValidator": true
+            },
+            "commonPrices": {
+              "type": "array",
+              "uniqueItems": true
+            }
+          }
+        },
+        "minMaxValidator": true
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["amount"]
+}

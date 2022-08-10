@@ -1,0 +1,202 @@
+{
+  "definitions": {
+    "localizedString": {
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "title": "LocalizedString",
+      "type": "object",
+      "properties": {}
+    },
+    "amount": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 1
+        }
+      },
+      "required": ["amount"]
+    },
+    "enumsAmount": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 1
+        },
+        "enumsAmount": {
+          "type": "number",
+          "minimum": 1
+        }
+      },
+      "required": ["amount", "enumsAmount"]
+    },
+    "lenumsAmount": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 1
+        },
+        "enumsAmount": {
+          "type": "number",
+          "minimum": 1
+        },
+        "localesAmount": {
+          "type": "number",
+          "minimum": 1
+        }
+      },
+      "required": ["amount", "enumsAmount"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "amount": {
+      "type": "number",
+      "minimum": 1
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "randomizedAttributes": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 1
+        },
+        "max": {
+          "type": "number",
+          "minimum": 1
+        },
+        "localesAmount": {
+          "type": "number",
+          "minimum": 1
+        },
+        "mustHaveLocales": {
+          "type": "array",
+          "uniqueItems": true
+        },
+        "attributeTypes": {
+          "type": "object",
+          "properties": {
+            "boolean": {
+              "$ref": "#/definitions/amount"
+            },
+            "text": {
+              "$ref": "#/definitions/amount"
+            },
+            "ltext": {
+              "$ref": "#/definitions/amount"
+            },
+            "enum": {
+              "$ref": "#/definitions/enumsAmount"
+            },
+            "lenum": {
+              "$ref": "#/definitions/lenumsAmount"
+            },
+            "number": {
+              "$ref": "#/definitions/amount"
+            },
+            "money": {
+              "$ref": "#/definitions/amount"
+            },
+            "date": {
+              "$ref": "#/definitions/amount"
+            },
+            "time": {
+              "$ref": "#/definitions/amount"
+            },
+            "datetime": {
+              "$ref": "#/definitions/amount"
+            },
+            "set": {
+              "$ref": "#/definitions/amount"
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      },
+      "totalAmountsValidator": true,
+      "required": ["min", "max"]
+    },
+    "commonAttributes": {
+      "type": "array",
+      "items": {
+        "title": "AttributeDefinition",
+        "type": "object",
+        "properties": {
+          "type": {
+            "additionalProperties": false,
+            "title": "AttributeType",
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "enum": [
+                  "boolean",
+                  "text",
+                  "ltext",
+                  "enum",
+                  "lenum",
+                  "number",
+                  "money",
+                  "date",
+                  "time",
+                  "datetime",
+                  "set"
+                ]
+              },
+              "values": {
+                "type": "array",
+                "uniqueItems": true
+              },
+              "elementType": {
+                "type": "object"
+              }
+            },
+            "required": ["name"]
+          },
+          "name": {
+            "type": "string"
+          },
+          "label": {
+            "$ref": "#/definitions/localizedString"
+          },
+          "isRequired": {
+            "type": "boolean"
+          },
+          "attributeConstraint": {
+            "title": "AttributeConstraintEnum",
+            "type": "string",
+            "enum": ["None"]
+          },
+          "inputTip": {
+            "$ref": "#/definitions/localizedString"
+          },
+          "inputHint": {
+            "title": "TextInputHint",
+            "type": "string",
+            "enum": ["SingleLine", "MultiLine"]
+          },
+          "isSearchable": {
+            "type": "boolean"
+          }
+        },
+        "required": ["type", "name", "label", "isRequired"]
+      },
+      "uniqueItems": true
+    },
+    "additionalProperties": false
+  },
+  "required": ["amount", "randomizedAttributes", "commonAttributes"]
+}

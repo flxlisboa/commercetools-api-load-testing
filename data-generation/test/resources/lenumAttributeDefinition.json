@@ -1,0 +1,315 @@
+{
+  "name": "computer_1_chips_lenum_1",
+  "label": {
+    "en": "computer_1_chips_lenum_1"
+  },
+  "isRequired": true,
+  "type": {
+    "name": "lenum",
+    "values": [
+      {
+        "key": "redefine_enum_1",
+        "label": {
+          "en": "borders_enum_1"
+        }
+      },
+      {
+        "key": "island_enum_2",
+        "label": {
+          "en": "transmitting_enum_2"
+        }
+      },
+      {
+        "key": "sports_enum_3",
+        "label": {
+          "en": "internal_enum_3"
+        }
+      },
+      {
+        "key": "michigan_enum_4",
+        "label": {
+          "en": "configuration_enum_4"
+        }
+      },
+      {
+        "key": "alarm_enum_5",
+        "label": {
+          "en": "maroon_enum_5"
+        }
+      },
+      {
+        "key": "withdrawal_enum_6",
+        "label": {
+          "en": "loan_enum_6"
+        }
+      },
+      {
+        "key": "payment_enum_7",
+        "label": {
+          "en": "functionalities_enum_7"
+        }
+      },
+      {
+        "key": "neural_enum_8",
+        "label": {
+          "en": "administrator_enum_8"
+        }
+      },
+      {
+        "key": "buckinghamshire_enum_9",
+        "label": {
+          "en": "ergonomic_enum_9"
+        }
+      },
+      {
+        "key": "investor_enum_10",
+        "label": {
+          "en": "supervisor_enum_10"
+        }
+      },
+      {
+        "key": "wooden_enum_11",
+        "label": {
+          "en": "awesome_enum_11"
+        }
+      },
+      {
+        "key": "attitude_enum_12",
+        "label": {
+          "en": "http_enum_12"
+        }
+      },
+      {
+        "key": "peso_enum_13",
+        "label": {
+          "en": "plum_enum_13"
+        }
+      },
+      {
+        "key": "indexing_enum_14",
+        "label": {
+          "en": "motivating_enum_14"
+        }
+      },
+      {
+        "key": "drive_enum_15",
+        "label": {
+          "en": "solid_enum_15"
+        }
+      },
+      {
+        "key": "dynamic_enum_16",
+        "label": {
+          "en": "regional_enum_16"
+        }
+      },
+      {
+        "key": "assurance_enum_17",
+        "label": {
+          "en": "cambridgeshire_enum_17"
+        }
+      },
+      {
+        "key": "avon_enum_18",
+        "label": {
+          "en": "distributed_enum_18"
+        }
+      },
+      {
+        "key": "out-of-the-box_enum_19",
+        "label": {
+          "en": "garden_enum_19"
+        }
+      },
+      {
+        "key": "greenland_enum_20",
+        "label": {
+          "en": "home_enum_20"
+        }
+      },
+      {
+        "key": "kiribati_enum_21",
+        "label": {
+          "en": "buckinghamshire_enum_21"
+        }
+      },
+      {
+        "key": "plum_enum_22",
+        "label": {
+          "en": "green_enum_22"
+        }
+      },
+      {
+        "key": "mandatory_enum_23",
+        "label": {
+          "en": "vortals_enum_23"
+        }
+      },
+      {
+        "key": "solution_enum_24",
+        "label": {
+          "en": "steel_enum_24"
+        }
+      },
+      {
+        "key": "cohesive_enum_25",
+        "label": {
+          "en": "computer_enum_25"
+        }
+      },
+      {
+        "key": "program_enum_26",
+        "label": {
+          "en": "mobile_enum_26"
+        }
+      },
+      {
+        "key": "industrial_enum_27",
+        "label": {
+          "en": "motorway_enum_27"
+        }
+      },
+      {
+        "key": "car_enum_28",
+        "label": {
+          "en": "pike_enum_28"
+        }
+      },
+      {
+        "key": "fresh_enum_29",
+        "label": {
+          "en": "solutions_enum_29"
+        }
+      },
+      {
+        "key": "group_enum_30",
+        "label": {
+          "en": "circuit_enum_30"
+        }
+      },
+      {
+        "key": "extensions_enum_31",
+        "label": {
+          "en": "account_enum_31"
+        }
+      },
+      {
+        "key": "chicken_enum_32",
+        "label": {
+          "en": "dynamic_enum_32"
+        }
+      },
+      {
+        "key": "buckinghamshire_enum_33",
+        "label": {
+          "en": "sports_enum_33"
+        }
+      },
+      {
+        "key": "division_enum_34",
+        "label": {
+          "en": "sleek_enum_34"
+        }
+      },
+      {
+        "key": "iowa_enum_35",
+        "label": {
+          "en": "indexing_enum_35"
+        }
+      },
+      {
+        "key": "rss_enum_36",
+        "label": {
+          "en": "games_enum_36"
+        }
+      },
+      {
+        "key": "payment_enum_37",
+        "label": {
+          "en": "graphic_enum_37"
+        }
+      },
+      {
+        "key": "calculating_enum_38",
+        "label": {
+          "en": "neutral_enum_38"
+        }
+      },
+      {
+        "key": "mission-critical_enum_39",
+        "label": {
+          "en": "account_enum_39"
+        }
+      },
+      {
+        "key": "invoice_enum_40",
+        "label": {
+          "en": "seize_enum_40"
+        }
+      },
+      {
+        "key": "impactful_enum_41",
+        "label": {
+          "en": "intelligent_enum_41"
+        }
+      },
+      {
+        "key": "dynamic_enum_42",
+        "label": {
+          "en": "director_enum_42"
+        }
+      },
+      {
+        "key": "one-to-one_enum_43",
+        "label": {
+          "en": "station_enum_43"
+        }
+      },
+      {
+        "key": "open-source_enum_44",
+        "label": {
+          "en": "way_enum_44"
+        }
+      },
+      {
+        "key": "b2b_enum_45",
+        "label": {
+          "en": "south_enum_45"
+        }
+      },
+      {
+        "key": "kansas_enum_46",
+        "label": {
+          "en": "structure_enum_46"
+        }
+      },
+      {
+        "key": "checking_enum_47",
+        "label": {
+          "en": "kids_enum_47"
+        }
+      },
+      {
+        "key": "bypassing_enum_48",
+        "label": {
+          "en": "refined_enum_48"
+        }
+      },
+      {
+        "key": "ram_enum_49",
+        "label": {
+          "en": "optical_enum_49"
+        }
+      },
+      {
+        "key": "international_enum_50",
+        "label": {
+          "en": "decentralized_enum_50"
+        }
+      }
+    ]
+  },
+  "attributeConstraint": "None",
+  "isSearchable": true,
+  "inputHint": "SingleLine"
+}

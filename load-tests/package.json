@@ -1,0 +1,41 @@
+{
+  "name": "commercetools-load-testing-load-tests",
+  "version": "0.0.1",
+  "description": "K6 based load testing scenarios.",
+  "scripts": {
+    "checks": "npm run lint && prettier --check .",
+    "lint": "eslint ./src ./test",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commercetools/commercetools-api-load-testing.git"
+  },
+  "keywords": [
+    "commercetools",
+    "load tests"
+  ],
+  "author": {
+    "name": "commercetools Professional Services",
+    "email": "ps-dev@commercetools.com"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "k6": "0.0.0"
+  },
+  "devDependencies": {
+    "@types/k6": "^0.32.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^8.2.0",
+    "lockfile-lint": "^4.6.2",
+    "prettier": "2.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/commercetools/commercetools-api-load-testing/issues"
+  },
+  "homepage": "https://github.com/commercetools/commercetools-api-load-testing#readme"
+}

@@ -1,0 +1,95 @@
+{
+  "definitions": {
+    "cartDiscountDrafts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "cartPredicate": {
+            "type": "string"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "value": {
+            "title": "CartDiscountValue",
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["relative"]
+              },
+              "permyriad": {
+                "type": "number",
+                "minimum": 1
+              }
+            },
+            "required": ["type", "permyriad"]
+          },
+          "target": {
+            "title": "CartDiscountTarget",
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["lineItems"]
+              },
+              "predicate": {
+                "type": "string"
+              }
+            },
+            "required": ["type", "predicate"]
+          }
+        },
+        "required": ["value", "target"]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    }
+  },
+  "type": "object",
+  "properties": {
+    "active": {
+      "type": "boolean"
+    },
+    "requiresDiscountCode": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 1
+        },
+        "cartDiscountDrafts": {
+          "$ref": "#/definitions/cartDiscountDrafts"
+        }
+      },
+      "additionalProperties": false,
+      "required": ["amount", "cartDiscountDrafts"]
+    },
+    "appliesToAllCarts": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "cartDiscountDrafts": {
+          "$ref": "#/definitions/cartDiscountDrafts"
+        }
+      },
+      "additionalProperties": false,
+      "required": ["amount", "cartDiscountDrafts"]
+    },
+    "additionalProperties": false
+  },
+  "anyOf": [
+    {
+      "required": ["requiresDiscountCode"]
+    },
+    {
+      "required": ["appliesToAllCarts"]
+    }
+  ]
+}

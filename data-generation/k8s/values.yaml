@@ -1,0 +1,24 @@
+image:
+  repository: 'eu.gcr.io/professionalserviceslabs/commercetools-load-testing-data-generation'
+  tag: '0.0.1'
+
+## edit those environment variables
+## ----------------------
+nonSensitiveEnvs:
+  CTP_PROJECT_KEY: 'YOUR_PROJECT_KEY'
+  CTP_API_URL: 'https://api.europe-west1.gcp.commercetools.com'
+  CTP_AUTH_URL: 'https://auth.europe-west1.gcp.commercetools.com'
+
+sensitiveEnvs:
+  CTP_CLIENT_ID: 'YOUR_CLIENT_ID'
+  CTP_CLIENT_SECRET: 'YOUR_CLIENT_SECRET'
+## ----------------------
+
+## suspended by default
+runOnDemandOnly: true
+
+# Avoid scheduling with this hack: as there is no day like 31 Feb :)
+schedule: '* * 31 2 *'
+
+# no retries on failures
+backoffLimit: 0

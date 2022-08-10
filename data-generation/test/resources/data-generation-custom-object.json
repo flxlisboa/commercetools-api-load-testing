@@ -1,0 +1,97 @@
+{
+  "productTypes": {
+    "amount": 5,
+    "randomizedAttributes": {
+      "min": 10,
+      "max": 30,
+      "localesAmount": 12,
+      "mustHaveLocales": [
+        "de-DE",
+        "fr-FR",
+        "es-ES",
+        "it-IT",
+        "nl-NL",
+        "de-CH",
+        "de-AT",
+        "fr-BE",
+        "en-DK",
+        "de-PL"
+      ],
+      "attributeTypes": {
+        "boolean": {
+          "amount": 1
+        },
+        "text": {
+          "amount": 2
+        },
+        "ltext": {
+          "amount": 1
+        },
+        "lenum": {
+          "amount": 5,
+          "enumsAmount": 50,
+          "localesAmount": 15
+        },
+        "enum": {
+          "amount": 10,
+          "enumsAmount": 10
+        },
+        "money": {
+          "amount": 1
+        },
+        "date": {
+          "amount": 1
+        },
+        "time": {
+          "amount": 1
+        },
+        "datetime": {
+          "amount": 1
+        },
+        "set": {
+          "amount": 3
+        }
+      }
+    },
+    "commonAttributes": []
+  },
+  "products": {
+    "amount": 7,
+    "variants": {
+      "max": 5,
+      "min": 5,
+      "prices": {
+        "randomizedPrices": {
+          "min": 10,
+          "max": 20,
+          "mustHaveCountries": [
+            "CH",
+            "DE",
+            "FR",
+            "NL",
+            "AT",
+            "BE",
+            "DK",
+            "IT",
+            "ES",
+            "PL"
+          ],
+          "currencies": ["EUR", "USD"],
+          "minCentAmount": 0,
+          "maxCentAmount": 1000
+        },
+        "commonPrices": [
+          {
+            "value": {
+              "type": "centPrecision",
+              "currencyCode": "EUR",
+              "centAmount": 1000,
+              "fractionDigits": 2
+            },
+            "country": "TR"
+          }
+        ]
+      }
+    }
+  }
+}

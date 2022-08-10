@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "amount": {
+      "type": "number",
+      "minimum": 1
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "additionalProperties": false
+  },
+  "required": ["amount"]
+}
