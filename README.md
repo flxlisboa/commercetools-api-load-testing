@@ -1,5 +1,7 @@
 # commercetools-api-load-testing
 
+Changes by Fernando
+
 In order to protect our platform and ensure the quality of a customer’s solution, we created this repository to be able to replicate the usage of the platform with load test scenarios.
 
 The repository provides two load testing solutions. The `main` and maintained branch is based on [k6](https://k6.io/docs/#what-is-k6) load testing tool. The load tests based on [locust](https://docs.locust.io/en/stable/index.html) tool could be found in the `locust` [branch](https://github.com/commercetools/commercetools-api-load-testing/tree/locust).
