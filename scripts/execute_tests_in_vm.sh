@@ -100,12 +100,12 @@ git config user.name $GIT_USER_EMAIL
 
 cd ..
 git add results
-git stash push -- results
-git checkout -f test-results
-git pull
-git stash pop
+#git stash push -- results
+#git checkout -f test-results
+#git pull
+#git stash pop
 git commit -m "Load testing results committed."
-git push origin test-results
+git push origin master
 EOF
 
 echo "You can now check the results in github repository https://github.com/commercetools/commercetools-api-load-testing/tree/test-results"

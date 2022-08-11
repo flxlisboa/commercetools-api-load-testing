@@ -30,7 +30,7 @@ const addLineItemTrend = new Trend('duration_addLineItem', true)
 const createOrderTrend = new Trend('duration_createOrder', true)
 const searchProductsTrend = new Trend('duration_searchProducts', true)
 
-const countries = ['CH', 'DE', 'FR', 'NL', 'AT', 'BE', 'DK', 'IT', 'ES', 'PL']
+const countries = ['GB', 'DE']
 
 export default function (context) {
   let cartId
