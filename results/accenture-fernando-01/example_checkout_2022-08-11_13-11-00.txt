@@ -1,0 +1,41 @@
+     █ setup
+
+       ✓ obtainAccessToken_Check
+       ✓ fetchLastProductSku_Check
+
+     █ browse shop and add line items
+
+       ✓ searchProducts_Check
+       ✓ getProductBySku_Check
+       ✗ createCart_Check
+        ↳  51% — ✓ 2290 / ✗ 2117
+       ✓ getCartById_Check
+       ✗ addLineItem_Check
+        ↳  0% — ✓ 0 / ✗ 2098
+
+     █ teardown
+
+     checks.........................: 90.16% ✓ 38640     ✗ 4215  
+     data_received..................: 309 MB 2.1 MB/s
+     data_sent......................: 12 MB  80 kB/s
+     duration_addLineItem...........: avg=20.3ms   min=15.57ms med=18.06ms max=354.7ms  p(95)=24.78ms  p(99)=67.7ms   count=2098 
+     duration_createCart............: avg=18.41ms  min=12.18ms med=19.05ms max=399.23ms p(95)=23.93ms  p(99)=36.56ms  count=4407 
+     duration_getCartById...........: avg=15.2ms   min=12.47ms med=14.15ms max=372.92ms p(95)=17.06ms  p(99)=29.5ms   count=2125 
+     duration_searchProductBySku....: avg=17.61ms  min=13.66ms med=16.39ms max=855.18ms p(95)=21.02ms  p(99)=35.74ms  count=29287
+     duration_searchProducts........: avg=21.25ms  min=16.59ms med=19.97ms max=957.32ms p(95)=24.38ms  p(99)=43.03ms  count=4936 
+     group_duration.................: avg=45.64s   min=25.12s  med=45.16s  max=1m33s    p(95)=59.2s    p(99)=1m3s     count=4215 
+     http_req_blocked...............: avg=229.41µs min=214ns   med=394ns   max=26.84ms  p(95)=3.06µs   p(99)=5.2ms    count=42855
+     http_req_connecting............: avg=47.18µs  min=0s      med=0s      max=23.72ms  p(95)=0s       p(99)=1.07ms   count=42855
+     http_req_duration..............: avg=18.12ms  min=12.18ms med=16.64ms max=957.32ms p(95)=22.24ms  p(99)=38.4ms   count=42855
+       { expected_response:true }...: avg=18.2ms   min=12.47ms med=16.64ms max=957.32ms p(95)=22.28ms  p(99)=37.06ms  count=38640
+     http_req_failed................: 9.83%  ✓ 4215      ✗ 38640 
+     http_req_receiving.............: avg=201.42µs min=26.16µs med=95.04µs max=27.47ms  p(95)=913.42µs p(99)=1.56ms   count=42855
+     http_req_sending...............: avg=78.59µs  min=29.06µs med=70.43µs max=25.05ms  p(95)=128.19µs p(99)=180.97µs count=42855
+     http_req_tls_handshaking.......: avg=173.49µs min=0s      med=0s      max=15.88ms  p(95)=0s       p(99)=4ms      count=42855
+     http_req_waiting...............: avg=17.84ms  min=12.02ms med=16.46ms max=956.53ms p(95)=21.76ms  p(99)=38.1ms   count=42855
+     http_reqs......................: 42855  285.53155/s
+     iteration_duration.............: avg=45.62s   min=78.51µs med=45.16s  max=1m33s    p(95)=59.2s    p(99)=1m3s     count=4217 
+     iterations.....................: 4215   28.083432/s
+     vus............................: 776    min=4       max=2000
+     vus_max........................: 2000   min=2000    max=2000
+
