@@ -6,7 +6,7 @@ The repository provides two load testing solutions. The `main` and maintained br
 
 For customer-specific load test scenarios, please navigate to the existing customer-specific branch and follow its readme because every branch will have its own documentation for project-specific flow on how to execute tests.
 
-If you are creating a new customer-specific load testing scenario, please use the following branch naming convention: [customerName]_[context]. Examples: `lego`, `lego_stores`, `cimpress_productImportPerformance`
+If you are creating a new customer-specific load testing scenario, please use the following branch naming convention: [customerName]_[context].
 
 ## Guides
 
