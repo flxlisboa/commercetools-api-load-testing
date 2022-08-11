@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/commercetools/commercetools-api-load-testing.git"
+    "url": "git+https://github.com/flxlisboa/commercetools-api-load-testing.git"
   },
   "keywords": [
     "commercetools",

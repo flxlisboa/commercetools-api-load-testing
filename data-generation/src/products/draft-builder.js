@@ -54,7 +54,7 @@ function buildPrices({
   minCentAmount = 0,
   maxCentAmount = 1000,
 }) {
-  const totalOfCountryCodes = 248
+  const totalOfCountryCodes = 3
   const prices = []
   const numberOfPrices = randomNumber(min, Math.min(max, totalOfCountryCodes))
   const centAmount = randomNumber(minCentAmount, maxCentAmount + 1)

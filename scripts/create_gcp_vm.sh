@@ -3,7 +3,7 @@
 set -e
 VM_NAME=""
 GCP_ZONE="europe-west3-c"
-GCP_PROJECT="professionalserviceslabs"
+GCP_PROJECT="k6-testing"
 GCP_MACHINE_TYPE="e2-standard-16"
 
 help() {
